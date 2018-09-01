@@ -56,7 +56,7 @@ public class RetailerController {
 	/**
 	 * Increments barcode.
 	 *
-	 * @param JSON incReqModel. Only attribute 'inc'.
+	 * @param JSON incReqModel. Only has attribute 'inc'.
 	 * {inc:n}
 	 * @return echo of the JSON incReqModel if result OK. RetailerNotFoundException and 404 if not OK.
 	 */

@@ -1,10 +1,9 @@
 package com.grawar.retailer.service.impl;
-import com.grawar.retailer.constant.ConstantNames;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import com.grawar.retailer.constant.ConstantNames;
 import com.grawar.retailer.constant.ConstantParams;
 import com.grawar.retailer.converter.RetailerConverter;
 import com.grawar.retailer.entity.Retailer;

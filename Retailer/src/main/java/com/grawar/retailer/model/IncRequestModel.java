@@ -1,5 +1,7 @@
 package com.grawar.retailer.model;
 
+import com.grawar.retailer.constant.ConstantParams;
+
 /**
  * Class IncRequestModel.
  * Object to transmit the information using JSON
@@ -9,7 +11,9 @@ public class IncRequestModel {
 	/** The increment */
 	private int inc;
 	
-	public IncRequestModel() {}
+	public IncRequestModel() {
+		this(ConstantParams.DEFAULT_INCREMENT);
+	}
 	
 	/**
 	 * Instantiates a new increment request model.
@@ -41,5 +45,17 @@ public class IncRequestModel {
 	@Override
 	public String toString() {
 		return String.valueOf(this.inc);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if(this == obj) {
+			return true;
+		}
+		if(!(obj instanceof IncRequestModel)) {
+			return false;
+		}
+		IncRequestModel irm = (IncRequestModel)obj;
+		return this.getInc() == irm.getInc();
 	}
 }
